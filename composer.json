@@ -24,6 +24,7 @@
         "psr-4": {
             "Aliyun\\OTS\\": "src/OTS",
             "Aliyun\\OTS\\Handlers\\": "src/OTS/Handlers",
+            "Aliyun\\OTS\\ProtoBuffer\\": "src/OTS/ProtoBuffer",
             "Aliyun\\OTS\\Retry\\": "src/OTS/Retry"
         },
         "files": [
