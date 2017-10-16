@@ -1,0 +1,33 @@
+{
+    "name": "ryan/aliyun-tablestore-sdk",
+    "description": "阿里云官方php SDK 2.1.1",
+    "keywords": ["aliyun", "ots", "tablestore", "sdk"],
+    "homepage": "https://github.com/RobinCodeX/aliyun-tablestore-sdk-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aliyun OTS Team",
+            "homepage": "http://www.aliyun.com/product/ots"
+        },
+        {
+            "name": "Ryan Feng",
+            "email": "chenghao.feng@suanzi.cn"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "guzzlehttp/guzzle": "3.8.1|~6.0.1|~6.1|~6.2"
+    },
+	
+    "autoload": {
+        "psr-4": {
+            "Aliyun\\OTS\\": "src/OTS",
+            "Aliyun\\OTS\\Handlers\\": "src/OTS/Handlers",
+            "Aliyun\\OTS\\Retry\\": "src/OTS/Retry"
+        },
+        "files": [
+            "ProtoBuffer/pb_message.php",
+            "ProtoBuffer/pb_proto_ots.php"
+        ] 
+    }
+}
