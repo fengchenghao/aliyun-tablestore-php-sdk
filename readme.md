@@ -8,7 +8,7 @@ Aliyun OTS SDK for PHP，用来通过PHP访问阿里云OTS服务。
 接入阿里云官方SDK 2.1.1
 
 ## Installation
-    "composer require astist/aliyun-tablestore-php-sdk"
+    "composer require artist/aliyun-tablestore-php-sdk"
 
 ## Documentation
 [文档可直接下载官方PHP SDK 2.1.1查看](https://help.aliyun.com/document_detail/27353.html)
