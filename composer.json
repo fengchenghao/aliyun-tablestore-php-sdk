@@ -22,10 +22,10 @@
 	
     "autoload": {
         "psr-4": {
-            "Aliyun\\OTS\\": "src/OTS",
-            "Aliyun\\OTS\\Handlers\\": "src/OTS/Handlers",
-            "Aliyun\\OTS\\ProtoBuffer\\": "src/OTS/ProtoBuffer",
-            "Aliyun\\OTS\\Retry\\": "src/OTS/Retry"
+            "Aliyun\\OTS\\": "",
+            "Aliyun\\OTS\\Handlers\\": "Handlers",
+            "Aliyun\\OTS\\ProtoBuffer\\": "ProtoBuffer",
+            "Aliyun\\OTS\\Retry\\": "Retry"
         },
         "files": [
             "ProtoBuffer/pb_message.php",
