@@ -1,5 +1,6 @@
 <?php
 
+namespace Aliyun\OTS\ProtoBuffer;
 /**
  * Abstract class for an input reader
  */

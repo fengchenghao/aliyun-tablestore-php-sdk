@@ -1,5 +1,7 @@
 <?php
 
+namespace Aliyun\OTS\ProtoBuffer;
+
 /**
  * Reads string input
  */

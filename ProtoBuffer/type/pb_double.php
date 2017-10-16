@@ -1,5 +1,6 @@
 <?php
 
+namespace Aliyun\OTS\ProtoBuffer;
 /**
  * @author Dmitry Vorobyev (http://dmitry.vorobyev.name)
  */

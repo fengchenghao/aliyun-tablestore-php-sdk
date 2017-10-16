@@ -1,4 +1,6 @@
 <?php
+
+namespace Aliyun\OTS\ProtoBuffer;
 /**
  * @author Nikolai Kordulla
  */

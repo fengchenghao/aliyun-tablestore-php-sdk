@@ -1,5 +1,7 @@
 <?php
 
+namespace Aliyun\OTS\ProtoBuffer;
+
 /**
  * Including of all files needed to parse messages
  * @author Nikolai Kordulla

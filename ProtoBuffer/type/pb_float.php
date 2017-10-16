@@ -1,5 +1,6 @@
 <?php
 
+namespace Aliyun\OTS\ProtoBuffer;
 /**
  * @author forthxu (http://forthxu.com)
  */
