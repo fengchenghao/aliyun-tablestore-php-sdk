@@ -2,26 +2,6 @@
 namespace Aliyun\OTS\Handlers;
 
 use Aliyun\OTS;
-
-use CreateTableRequest;
-use DeleteTableRequest;
-use DescribeTableRequest;
-use UpdateTableRequest;
-use GetRowRequest;
-use PutRowRequest;
-use UpdateRowRequest;
-use DeleteRowRequest;
-use BatchGetRowRequest;
-use BatchWriteRowRequest;
-use GetRangeRequest;
-
-use ColumnType, OperationType, Condition, Column, ColumnValue, ColumnUpdate;
-use Direction, ReservedThroughput, CapacityUnit;
-use TableInBatchGetRowRequest, RowInBatchGetRowRequest;
-use TableInBatchWriteRowRequest;
-use PutRowInBatchWriteRowRequest;
-use UpdateRowInBatchWriteRowRequest;
-use DeleteRowInBatchWriteRowRequest;
 use Aliyun\OTS\LogicalOperatorConst;
 use Aliyun\OTS\ComparatorTypeConst;
 use Aliyun\OTS\RowExistenceExpectationConst;
@@ -144,11 +124,11 @@ class ProtoBufferEncoder
     {
     	$value=null;
     	if ( strcmp($condition, RowExistenceExpectationConst::CONST_IGNORE) == 0 )
-    		$value = \RowExistenceExpectation::IGNORE;
+    		$value = RowExistenceExpectation::IGNORE;
     	else if ( strcmp($condition, RowExistenceExpectationConst::CONST_EXPECT_EXIST) == 0 )
-    		$value = \RowExistenceExpectation::EXPECT_EXIST;
+    		$value = RowExistenceExpectation::EXPECT_EXIST;
     	else if ( strcmp($condition, RowExistenceExpectationConst::CONST_EXPECT_NOT_EXIST) == 0 )
-    		$value = \RowExistenceExpectation::EXPECT_NOT_EXIST;
+    		$value = RowExistenceExpectation::EXPECT_NOT_EXIST;
     	else {
     		throw new \Aliyun\OTS\OTSClientException("Condition must be one of 'RowExistenceExpectationConst::CONST_IGNORE', 'RowExistenceExpectationConst::CONST_EXPECT_EXIST' or 'RowExistenceExpectationConst::CONST_EXPECT_NOT_EXIST'.");
     	}
@@ -501,19 +481,19 @@ class ProtoBufferEncoder
     		$columnValue = new \ColumnValue();
     		$columnValue->set_type($column_filter['value']['type']);
     		switch($column_filter['value']['type']) {
-    			case \ColumnType::BINARY:
+    			case ColumnType::BINARY:
     				$columnValue->set_v_binary($column_filter['value']['v_binary']);
     				break;
-    			case \ColumnType::BOOLEAN:
+    			case ColumnType::BOOLEAN:
     				$columnValue->set_v_bool($column_filter['value']['v_bool']);
     				break;
-    			case \ColumnType::DOUBLE:
+    			case ColumnType::DOUBLE:
     				$columnValue->set_v_double($column_filter['value']['v_double']);
     				break;
-    			case \ColumnType::INTEGER:
+    			case ColumnType::INTEGER:
     				$columnValue->set_v_int($column_filter['value']['v_int']);
     				break;
-    			case \ColumnType::STRING:
+    			case ColumnType::STRING:
     				$columnValue->set_v_string($column_filter['value']['v_string']);
     				break;
     			default:
