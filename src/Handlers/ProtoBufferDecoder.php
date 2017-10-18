@@ -1,22 +1,6 @@
 <?php
 namespace Aliyun\OTS\Handlers;
 
-use CreateTableResponse;
-use ListTableResponse;
-use DeleteTableResponse;
-use DescribeTableResponse;
-use UpdateTableResponse;
-use GetRowResponse;
-use PutRowResponse;
-use UpdateRowResponse;
-use DeleteRowResponse;
-use BatchGetRowResponse;
-use BatchWriteRowResponse;
-use GetRangeResponse;
-
-use ColumnType; 
-
-
 class ProtoBufferDecoder
 {
     public function handleBefore($context)

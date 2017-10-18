@@ -221,7 +221,8 @@ abstract class PBMessage
             }
             else
             {
-                $this->values[$messtypes['field']] = new $this->fields[$messtypes['field']]($this->reader);
+                $method = 'Aliyun\\OTS\\Handlers\\'.$this->fields[$messtypes['field']];
+                $this->values[$messtypes['field']] = new $method($this->reader);
                 if ($messtypes['wired'] != $this->values[$messtypes['field']]->wired_type)
                 {
                     throw new Exception('Expected type:' . $messtypes['wired'] . ' but had ' . $this->fields[$messtypes['field']]->wired_type);
@@ -273,7 +274,8 @@ abstract class PBMessage
         }
         else
         {
-            $this->values[$index] = new $this->fields[$index]();
+            $method = 'Aliyun\\OTS\\Handlers\\' . $this->fields[$index];
+            $this->values[$index] = new $method();
             $this->values[$index]->value = $value;
         }
     }
