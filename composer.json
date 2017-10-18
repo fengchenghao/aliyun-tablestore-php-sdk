@@ -2,7 +2,7 @@
     "name": "artist/aliyun-tablestore-sdk",
     "description": "阿里云官方php SDK 2.1.1",
     "keywords": ["aliyun", "ots", "tablestore", "sdk"],
-    "homepage": "https://github.com/fengchenghao/aliyun-tablestore-sdk-php",
+    "homepage": "https://github.com/fengchenghao/aliyun-tablestore-php-sdk",
     "license": "MIT",
     "authors": [
         {
@@ -24,7 +24,6 @@
         "psr-4": {
             "Aliyun\\OTS\\": "src/",
             "Aliyun\\OTS\\Handlers\\": "src/Handlers",
-            "Aliyun\\OTS\\ProtoBuffer\\": "src/ProtoBuffer",
             "Aliyun\\OTS\\Retry\\": "src/Retry"
         },
         "files": [

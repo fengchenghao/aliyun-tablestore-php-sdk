@@ -1,6 +1,6 @@
 <?php
 
-namespace Aliyun\OTS\ProtoBuffer;
+namespace Aliyun\OTS\Handlers;
 
 class Error extends PBMessage {
     var $wired_type = PBMessage::WIRED_LENGTH_DELIMITED;

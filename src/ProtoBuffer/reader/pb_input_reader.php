@@ -1,6 +1,6 @@
 <?php
 
-namespace Aliyun\OTS\ProtoBuffer;
+namespace Aliyun\OTS\Handlers;
 /**
  * Abstract class for an input reader
  */

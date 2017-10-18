@@ -1,6 +1,6 @@
 <?php
 
-namespace Aliyun\OTS\ProtoBuffer;
+namespace Aliyun\OTS\Handlers;
 /**
  * Base 128 varints - decodes and encodes base128 varints to/from decimal
  * @author Nikolai Kordulla
