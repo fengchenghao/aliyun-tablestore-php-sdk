@@ -211,7 +211,8 @@ abstract class PBMessage
             // now array or not
             if (is_array($this->values[$messtypes['field']]))
             {
-                $this->values[$messtypes['field']][] = new $this->fields[$messtypes['field']]($this->reader);
+                $method = 'Aliyun\\OTS\\Handlers\\' . $this->fields[$messtypes['field']];
+                $this->values[$messtypes['field']][] = new $method($this->reader);
                 $index = count($this->values[$messtypes['field']]) - 1;
                 if ($messtypes['wired'] != $this->values[$messtypes['field']][$index]->wired_type)
                 {

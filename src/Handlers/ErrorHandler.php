@@ -7,11 +7,11 @@ class ErrorHandler
 {
     private function logOTSServerException(RequestContext $context, \Aliyun\OTS\OTSServerException $exception)
     {
-        $errorLogger = $context->clientConfig->errorLogHandler;
+        // $errorLogger = $context->clientConfig->errorLogHandler;
 
-        if ($errorLogger != null) {
-            $errorLogger((string)$exception);
-        }
+        // if ($errorLogger != null) {
+            // $errorLogger((string)$exception);
+        // }
     }
 
     public function handleBefore(RequestContext $context)
@@ -25,7 +25,7 @@ class ErrorHandler
             return;
         }
 
-        $error = new \Error();
+        $error = new Error();
         $errorCode = null;
         $errorMessage = null;
 

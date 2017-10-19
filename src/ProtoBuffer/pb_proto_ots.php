@@ -617,7 +617,8 @@ class GetRowRequest extends PBMessage {
         $v->set_value ( $value );
     }
     function set_columns_to_get($index, $value) {
-        $v = new $this->fields['3'] ();
+        $method = 'Aliyun\\OTS\\Handlers\\' . $this->fields['3'];
+        $v = new $method();
         $v->set_value ( $value );
         $this->_set_arr_value ( '3', $index, $v );
     }
